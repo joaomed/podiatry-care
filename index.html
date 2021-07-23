@@ -10,6 +10,9 @@
     <!-- Está definindo o tamanho da tela de acordo com o dispositivo, ou seja, aumentando a flexibilidade da aplicação -->
     <title>Podologia</title>
 
+    <!-- ICONS -->
+    <link rel="stylesheet" href="assets/fonts/style.css">
+
     <!-- STYLES -->
     <link rel="stylesheet" href="style.css">
 
@@ -26,17 +29,22 @@
 <body>
     <header id="header">
         <nav class="container">
-            <a class="logo" href="#">Podologia<span>Depilação</span>.</a>
             <!-- Logo - Ao clicar levará para algum lugar, por isso o link-->
+            <a class="logo" href="#">Podologia<span>Depilação</span>.</a>
+            <!-- Menu -->
             <div class="menu">
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#testimonials">Depoimentos</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                <ul class="grid">
+                    <li><a class="title" href="#home">Início</a></li>
+                    <li><a class="title" href="#about">Sobre</a></li>
+                    <li><a class="title" href="#services">Serviços</a></li>
+                    <li><a class="title" href="#testimonials">Depoimentos</a></li>
+                    <li><a class="title" href="#contact">Contato</a></li>
                 </ul>
-            </div> <!-- Menu -->
+            </div>
+            <!--/Menu-->
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+
         </nav>
     </header>
 
@@ -48,7 +56,7 @@
                         alt="Pé com unha feita 1">
                 </div>
                 <div class="text">
-                    <h1>Saúde e cuidado para os seus pés</h1>
+                    <h2 class="title">Saúde e cuidado para os seus pés</h2>
                     <p>Uma clínica particular em Nova Iguaçu, especializada em tratamentos de Podologia.</p>
                     <a class="button" href="#">Agendar um horário</a>
                 </div>
@@ -64,7 +72,7 @@
                         alt="Clínica de podologia">
                 </div>
                 <div class="text">
-                    <h1>Sobre nós</h1>
+                    <h2 class="title">Sobre nós</h2>
                     <p>Nossos pés são a base de sustentação do nosso corpo, responsáveis para que possamos ficar em pé e
                         pela nossa locomoção. Por estes motivos, os pés estão sujeitos a muita tensão e desgaste o que
                         pode resultar em calosidades, rachaduras, fungos nas unhas, descamação da pele, lesões entre
@@ -75,24 +83,41 @@
             </div>
         </section>
 
+        <div class="divider-2"></div>
+
         <section class="section" id="services">
             <div class="container grid">
-                <div class="image">
-                    <img src="https://media.istockphoto.com/photos/podiatry-clinic-picture-id874204128?k=6&m=874204128&s=612x612&w=0&h=BE1q02AXSJiC7O_sgXtw1kUjhnRiOWckM-5e0WgK3og="
-                        alt="Clínica de podologia">
-                </div>
-                <div class="text">
-                    <h1>Sobre nós</h1>
-                    <p>Nossos pés são a base de sustentação do nosso corpo, responsáveis para que possamos ficar em pé e
-                        pela nossa locomoção. Por estes motivos, os pés estão sujeitos a muita tensão e desgaste o que
-                        pode resultar em calosidades, rachaduras, fungos nas unhas, descamação da pele, lesões entre
-                        outros males. Na podologia o objetivo do cuidado não é apenas estético, como muitos podem
-                        pensar, mas sim uma ciência dedicada para diagnosticar, prevenir, estudar, investigar, orientar
-                        e tratar as patologias dos pés.</p>
+                <header>
+                    <h2 class="title">Serviços</h2>
+                    <p>Nossos pés são a base de <strong> PodologiaDepilação</strong> do nosso corpo, responsáveis
+                        para que possamos ficar em
+                        pé e pela nossa locomoção.</p>
+                </header>
+                <div class="cards grid">
+                    <div class="card">
+                        <i class="icon-cosmetic"></i>
+                        <h3 class="title">Podologia</h3>
+                        <p>Nossos pés são a base de sustentação do nosso corpo, responsáveis para que possamos ficar em
+                            pé e pela nossa locomoção. </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-cosmetic"></i>
+                        <h3 class="title">Depilação</h3>
+                        <p>Nossos pés são a base de sustentação do nosso corpo, responsáveis para que possamos ficar em
+                            pé e pela nossa locomoção. </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-cosmetic"></i>
+                        <h3 class="title">Tratamentos</h3>
+                        <p>Nossos pés são a base de sustentação do nosso corpo, responsáveis para que possamos ficar em
+                            pé e pela nossa locomoção. </p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
