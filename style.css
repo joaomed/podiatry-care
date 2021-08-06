@@ -1,3 +1,6 @@
+/*GRID - Ativa funcionalidades como o gap 
+GAP - Espaço entre elementos*/
+
 /************** RESET - Resetaremos todas a edições que o navegador deixa de padrão */
 * {
   margin: 0;
@@ -166,6 +169,10 @@ main {
 
 .logo span {
   color: var(--base-color);
+}
+
+.logo-alt span {
+  color: var(--body-color);
 }
 
 /************* NAVIGATION **********************************************************************/
@@ -490,3 +497,74 @@ nav.show div.icon-close {
 #contact ul li i {
   color: var(--base-color);
 }
+
+/************* FOOTER - RODAPÉ **********************************************************************/
+
+footer {
+  background: var(--base-color);
+}
+
+footer .logo{
+  /*Normalmente a tag "a" vem com display inline(não da pra mexer no margin-botton). Por isso utilizamos "inline-block" */
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p{
+  margin-bottom: 0.75rem;
+  color: var(--text-color-light)
+}
+
+footer .social a{
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+footer .social a:hover{
+  transform: translatey(-5px);
+}
+/*
+footer .social {
+  display: flex;
+  gap: 2rem;
+}
+
+
+/************* BACK-TO-TOP **********************************************************************/
+
+.back-to-top {
+
+  color: var(--base-color-alt);
+  /*Ficar fixado embaixo da tela o tempo todo*/
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;  
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: .3s;
+  transform: translateY(100%);
+
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;  
+  transform: translateY(0);
+
+}
+
+
+
+
+
+
+
+

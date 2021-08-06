@@ -1,13 +1,17 @@
-<!DOCTYPE html> <!-- Definição do documento -->
-<html lang="pt_BR">
+<!-- Definição do documento -->
+<!DOCTYPE html>
 <!-- Definição do pai de todos. Root, raiz. A tag principal de todas. Definição da linguagem com o atributo lang-->
+<html lang="pt_BR">
+
+<!-- A CABEÇA - Tudo que está fora do corpo, como título na aba. Além clara, das importações -->
 
 <head>
-    <!-- A CABEÇA - Tudo que está fora do corpo, como título na aba. Além clara, das importações -->
+
     <!-- PAGE INFO -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Está definindo o tamanho da tela de acordo com o dispositivo, ou seja, aumentando a flexibilidade da aplicação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Podologia</title>
 
     <!-- ICONS -->
@@ -26,13 +30,12 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet">
 
-
-
 </head>
+
 <!-- O CORPO - Todo conteúdo da minha página, como as imagens e escritas-->
 
 <body>
-    <!-- STYLES -->
+
     <header id="header">
         <nav class="container">
             <!-- Logo - Ao clicar levará para algum lugar, por isso o link-->
@@ -216,17 +219,43 @@
             </div>
         </section>
 
-
+        <div class="divider-1"></div>
 
     </main>
+
+    <footer class="section">
+        <div class="container grid">
+            <div class="brand">
+                <a class="logo logo-alt" href="#home">Podologia<span>Depilação</span>.</a>
+                <p class="p1">
+                    ©2021 Beautysalon.
+                </p>
+                <p>
+                    Todos os direitos reservados.
+                </p>
+
+            </div>
+            <div class="social">
+                <a href="https://instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i><i class="icon-arrow-up-circle"></i></i></a>
 
     <!--  Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Scroll Reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
+
     <!--  main.js -->
     <script src="main.js"></script>
+
 </body>
 
 </html>

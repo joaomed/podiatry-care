@@ -24,22 +24,20 @@ for (const element of menu) {
 }
 
 // Mudar o header da página quando der scroll
-
-const header = document.querySelector("#header")
-// Deslocamento da altura
-const navHeight = header.offsetHeight
-
-window.addEventListener('scroll', function () {
+function changeHeaderWhenScroll() {
+    const header = document.querySelector("#header")
+    // Deslocamento da altura
+    const navHeight = header.offsetHeight
     if (window.scrollY >= navHeight) {
         header.classList.add('scroll')
     } else {
         header.classList.remove('scroll')
-
     }
-})
+}
+
+
 
 // Testimonials carousel slider - swiper
-
 const swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     pagination: {
@@ -50,7 +48,6 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 // ScrollReveal: mostrar elementos quando der scroll na página
-
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -69,3 +66,22 @@ scrollReveal.reveal(
     `,
     { interval: 100 }
 )
+
+// Back-to-top button
+function backToTop() {
+    const backToTopButton = document.querySelector('.back-to-top')
+
+    if (window.scrollY >= 560) {
+        backToTopButton.classList.add('show')
+    }
+    else {
+        backToTopButton.classList.remove('show')
+    }
+
+}
+
+/*When Scroll*/
+window.addEventListener('scroll', function () {
+    changeHeaderWhenScroll()
+    backToTop()
+})
